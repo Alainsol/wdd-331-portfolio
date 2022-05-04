@@ -1,0 +1,45 @@
+/*@mixin flex-container() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}*/
+#contactform {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  body {
+    background-color: darkred;
+  }
+  
+  #contactform {
+    background-color: white;
+  }
+  #contactform input, #contactform textarea {
+    background-color: white;
+    flex: 2;
+    /*@include flex-container();*/
+  }
+  #contactform label {
+    color: rgb(97, 20, 20);
+    font-size: 40px;
+    font-family: "lato, sans-serif";
+    background-color: lightgrey;
+  }
+  @media (min-width: 400px) {
+    #contactform {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
