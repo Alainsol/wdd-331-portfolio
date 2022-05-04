@@ -1,0 +1,19 @@
+@media only screen and (max-width: 400px){
+    
+
+
+    header{
+        background: #ffffff;
+        margin:0;
+        text-align:center;
+       
+    }
+    .post-date {
+        margin: 10px;
+        color: #999;
+        text-align: end;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+}

@@ -1,0 +1,41 @@
+@media only screen and (min-width: 400px){
+
+    header{
+        background: #ffffff;
+        margin:0;
+        padding: 50px;
+        text-align:right;
+       
+    }
+    .post-date {
+        margin: 10px;
+        color: #999;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    header ul li {
+        font-size: 15px;
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        
+    }
+    header h1{
+        text-align: center;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        margin-top: 20px;
+        background: white;
+        padding: 15px;
+        
+}
+}

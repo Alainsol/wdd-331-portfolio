@@ -1,0 +1,67 @@
+ //colors
+ $body-background-color: darkred;
+ $form-background-color: white;
+ $input-color: white;
+ $headlines-color : white;
+ $break-small:400px;
+/*@mixin flex-container() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}*/
+@mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+@mixin color-change($color, $font-size, $font-family, $background-color ) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    background-color: $background-color;
+}
+
+@mixin center {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactform {
+      @include center;
+  }
+
+
+ body {
+    background-color: $body-background-color;          
+}
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+
+        /*@include flex-container();*/
+    }
+    label{
+        @include color-change(rgb(97, 20, 20), 40px, "lato, sans-serif", lightgrey)
+
+    }
+    @media (min-width: $break-small) {
+       & {
+          width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
+    }
+}
+
