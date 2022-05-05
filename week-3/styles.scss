@@ -132,3 +132,26 @@
     }
 }
 
+$break-small: 20em;
+$break-medium:31em;
+$break-large:60em;
+
+
+@mixin breakpoint($break) {
+    @if $break == large {
+    @media (max-width: $break-large) { @content; }
+    }
+    @else if $break == medium {
+    @media (max-width: $break-medium) { @content; }
+    }
+    @else if $break == small {
+    @media (max-width: $break-small) { @content; }
+    } @else {
+    @media ($break) { @content; }
+    }
+    }  
+    body{
+        @include breakpoint(large){ background-color: RED;}
+        @include breakpoint(medium){ background-color: rgb(22, 22, 61);}
+        @include breakpoint(small){ background-color: rgb(63, 12, 57);}
+    }             
