@@ -56,7 +56,7 @@ body {
 /* col grid stylings */
 
 .col-grid {
-    height: 150vh;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
