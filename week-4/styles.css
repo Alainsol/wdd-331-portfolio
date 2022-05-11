@@ -1,22 +1,29 @@
+body{
+  width: 1160px;
+  margin: 0 auto 0 auto;
+}
 
 .card-grid{
-  
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-
-    
-   
-  }
-             
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
 
 .row-grid{
-  display: flex;
-  row-gap: 20px;
-  align-items: center;
- 
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 240px;
+  gap:20px;
 
 }
+
+.card{
+  overflow:hidden;
+  flex-grow: 1;
+  
+}
+
+
