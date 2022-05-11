@@ -1,29 +1,84 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body {
   width: 1160px;
   margin: 0 auto 0 auto;
 }
 
-.card-grid{
+
+/* General stylings */
+
+.card-grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  position: relative;
+  /* gap: 40px; */
+  width: 100%;
 }
 
-.row-grid{
-  display:flex;
+.card h2 {
+  font-family: 'Roboto', sans-serif;
+  align-self: center;
+  font-size: 14px;
+}
+
+
+/* row-grid stylings */
+
+.row-grid {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: flex-start;
-  /*height: 240px;*/
-  gap:20px;
-
+  gap: 20px;
+  justify-content: space-around;
+  margin: 40px 0 80px 0;
 }
 
-.card{
-  overflow:hidden;
+.row-grid>.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  height: 400px;
   flex-grow: 1;
-  
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+}
+
+.row-grid>.card img {
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+
+/* col grid stylings */
+
+.col-grid {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+}
+
+.col-grid>.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+}
+
+.col-grid>.card img {
+  height: inherit;
+  object-fit: cover;
 }
 
 
