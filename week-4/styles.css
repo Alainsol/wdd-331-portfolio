@@ -1,0 +1,22 @@
+
+.card-grid{
+  
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+
+    
+   
+  }
+             
+
+.row-grid{
+  display: flex;
+  row-gap: 20px;
+  align-items: center;
+ 
+
+}
