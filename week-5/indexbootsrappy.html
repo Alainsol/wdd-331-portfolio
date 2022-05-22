@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bootstrappy Grid with CSS Variables!</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="css/bootstrappy.css">
+
 </head>
 
 <body>
@@ -32,7 +34,29 @@
     <div class="item">4</div>
   </div>
 
- 
+  <style>
+    
+    .grid {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(var(--cols, 12), minmax(0, 1fr));
+    }
+
+    .item {
+      
+      min-width: 0;
+      width: 100%;
+      --span: 1;
+      grid-column: span var(--span);
+    }
+    
+    body > :first-child{
+      display: none;
+    }
+  
+  </style>
+    
+  
 
 </body>
 

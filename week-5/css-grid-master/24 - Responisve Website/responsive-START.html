@@ -34,6 +34,8 @@
         Menu
       </button>
       <ul id="menu-list">
+        <div class="top">
+
         <li>
           <a href="">Tacos</a>
         </li>
@@ -50,6 +52,7 @@
           <a href="">Reservations</a>
         </li>
       </ul>
+    </div>
     </nav>
 
     <section class="features">
@@ -102,6 +105,15 @@
   </div>
 
   <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({target }){
+      const expanded = target.getAtribute('aria-expanded') === 'true' || false;
+
+      navButton.setAttribute('aria-expanded', !expanded);
+     
+    }
+    navButton.addEventlistner('click, toggleeNav');
   </script>
   
 </body>
