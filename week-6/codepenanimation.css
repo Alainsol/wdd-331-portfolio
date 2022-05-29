@@ -27,7 +27,7 @@
   .orbiting-circle {
     height: 25%;
     width: 25%;
-    background-color: darkred;
+    background-color: rgb(153, 10, 10);
     border-radius: 50%;
     animation: orbit 3s linear infinite;
     opacity: 0.5;
@@ -70,9 +70,9 @@
   }
   
   .morphing-circle {
-    opacity: 0.5;
     height: 25%;
     width: 25%;
+    opacity: 0.5;
     background-color: darkred;
     border-radius: 50%;
     animation: morphing-circle-square 3s linear infinite;
@@ -114,14 +114,15 @@
     justify-content: center;
     align-items: center;
   }
-  
+  /*https://stackdiary.com/css-animations/*/
   .divide-circle-left {
     opacity: 0.5;
     height: 25%;
     width: 12%;
     background-color: darkred;
     border-radius: 50px 0 0 50px / 50px 0 0 50px;
-    animation: divide 3s linear infinite;
+    animation: divide  linear infinite;
+    animation-duration: 3s;
   }
   
   .divide-circle-right {
@@ -130,6 +131,7 @@
     width: 12%;
     background-color: darkred;
     border-radius: 0 50px 50px 0 / 0 50px 50px 0;
+    animation-duration: 3s;
   }
   
   @keyframes divide {
@@ -149,47 +151,48 @@
       margin-right: 0;
     }
   }
-  
+  /*On #4, I just noticed that my animation is a smidge short...it looks like it's a pattern of 2 beats then one beat. It should just be a repeating 2 beat pattern.*/
   .container-four {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .pulse-circle {
+   /*The scale() function is specified with either one or two values, which represent the amount of scaling to be applied in each direction.
+  scale(sx)
+scale(sx, sy)
+
+https://learnwithparam.com/blog/hearbeat-animation-using-css/#:~:text=%23Logrocket%20Blog-,Heart%20beat%20animation%20using%20CSS,-July%2021%2C%202019
+
+2beats means 2 second*/
+  .heartbeat-circle {
     opacity: 0.5;
     height: 25%;
     width: 25%;
     background-color: darkred;
     border-radius: 50%;
-    animation: pulse 2s infinite;
+    animation: heartbeat infinite;
+    animation-duration: 2s;
   }
-  
-  @keyframes pulse {
-    20% {
-      transform: scale(1);
-    }
-    22% {
-      transform: scale(1.2);
+ 
+  @keyframes heartbeat {
+    
+    0% {
+      transform: scale(0, 0);
     }
     25% {
-      transform: scale(1);
+      transform: scale(1, 1);
     }
     50% {
-      transform: scale(1);
-    }
-    70% {
-      transform: scale(1.2);
+      transform: scale(1.3, 1.3);
     }
     75% {
-      transform: scale(1);
+      transform: scale(1, 1);
     }
-    80% {
-      transform: scale(1.2);
+    100% {
+      transform: scale(1.3, 1.3);
     }
-    85% {
-      transform: scale(1);
-    }
+   
+    
   }
   
   
