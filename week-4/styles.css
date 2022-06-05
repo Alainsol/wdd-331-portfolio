@@ -1,83 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 body {
-    width: 1160px;
-    margin: 0 auto 0 auto;
+  width: 1160px;
+  margin: 0 auto 0 auto;
 }
-
 
 /* General stylings */
 
 .card-grid {
-    display: flex;
-    flex-direction: column;
-    /* gap: 40px; */
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 40px; */
+  width: 100%;
 }
 
 .card h2 {
-    font-family: 'Roboto', sans-serif;
-    align-self: center;
-    font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+  font-size: 14px;
 }
-
 
 /* row-grid stylings */
 
 .row-grid {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-    margin: 40px 0 80px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 40px 0 80px 0;
 }
 
 .row-grid .card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    height: 400px;
-    flex-grow: 1;
-    overflow: hidden;
-    background: #f7f7f7;
-    border: 1px solid #b5b5b5;
-    border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  height: 400px;
+  flex-grow: 1;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
 }
 
 .row-grid .card img {
-    height: 200px;
-    overflow: hidden;
-    object-fit: cover;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
 }
-
 
 /* col grid stylings */
 
 .col-grid {
-    height: 170vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* justify-content: space-between; */
-    align-content: space-between;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: space-between; */
+  align-content: space-between;
 }
 
 .col-grid .card {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    background: #f7f7f7;
-    border: 1px solid #b5b5b5;
-    border-radius: 4px;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  width: 300px;
 }
 
 .col-grid .card img {
-    height: inherit;
-    object-fit: cover;
+  height: inherit;
+  object-fit: cover;
 }
-
