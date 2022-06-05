@@ -252,8 +252,8 @@ footer a:link, footer a:visited {
 				filter: blur(0em);
 				transition: filter 10s;
 				border-radius: 1em 1em 0 0;
-				padding-right: 300px;
-   				 margin-right: 300px;
+				/*padding-right: 300px;
+   				 margin-right: 300px;*/
 
 			}
 		.intro { 
