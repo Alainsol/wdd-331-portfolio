@@ -1,0 +1,43 @@
+.card {
+    border: 1px solid #ccc;
+    height: 300px;
+    position: relative;
+    transition: transform 1s linear;
+    transform-style: preserve-3d;
+    width: 240px;
+    }
+    
+    /* Applies to both child div elements */
+    .side {
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    
+}
+    
+    .front {
+    transform: rotateY(180deg);
+    }
+    .back {
+    background: rgba(204, 204, 204, 0.8);
+    }
+    .suit {
+    line-height: 1;
+    text-align: center;
+    font-size: 300px;
+    }
+    .side {
+    backface-visibility: hidden;
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    }
+
+    .flipped {
+        transform: rotateY(180deg);
+        }
+    
