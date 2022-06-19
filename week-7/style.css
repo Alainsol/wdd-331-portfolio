@@ -136,7 +136,7 @@ p {
 .cart__promo-form-input:focus-visible {
   outline: #0069d9 solid 1px;
 }
-.cart__promo-form-input ::webkit-input-placeholder {
+.cart__promo-form-input::webkit-input-placeholder {
   color: #c3c3c3;
   font-size: 0.8em;
 }
