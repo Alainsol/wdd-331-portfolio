@@ -5,6 +5,7 @@
     "stylelint-config-standard-scss": "^4.0.0"
   },
   "dependencies": {
-    "stylelint-selector-bem-pattern": "^2.1.1"
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "uncss": "^0.17.3"
   }
 }

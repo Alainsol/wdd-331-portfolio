@@ -1,0 +1,26 @@
+div {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#border1 {
+  fill: yellow;
+  stroke: black;
+  stroke-width: 6;
+}
+
+#border2 {
+  fill: black;
+  stroke: rgb(30, 26, 26);
+  stroke-width: 6;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  margin-top: 10px;
+  margin-left: 100px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 2px rgb(253, 182, 3);
+}/*# sourceMappingURL=style.css.map */

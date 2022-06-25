@@ -21,22 +21,17 @@ body {
 #contactform {
   background-color: white;
 }
-
 #contactform input, #contactform textarea {
   background-color: white;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   /*@include flex-container();*/
 }
-
 #contactform label {
-  color: #611414;
+  color: rgb(97, 20, 20);
   font-size: 40px;
   font-family: "lato, sans-serif";
   background-color: lightgrey;
 }
-
 @media (min-width: 400px) {
   #contactform {
     width: 90%;
@@ -69,22 +64,17 @@ body {
 #contactform {
   background-color: white;
 }
-
 #contactform input, #contactform textarea {
   background-color: white;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   /*@include flex-container();*/
 }
-
 #contactform label {
-  color: #611414;
+  color: rgb(97, 20, 20);
   font-size: 40px;
   font-family: "lato, sans-serif";
   background-color: lightgrey;
 }
-
 @media (min-width: 400px) {
   #contactform {
     width: 90%;
@@ -99,16 +89,13 @@ body {
     background-color: RED;
   }
 }
-
 @media (max-width: 31em) {
   body {
-    background-color: #16163d;
+    background-color: rgb(22, 22, 61);
   }
 }
-
 @media (max-width: 20em) {
   body {
-    background-color: #3f0c39;
+    background-color: rgb(63, 12, 57);
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

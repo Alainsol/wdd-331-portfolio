@@ -1,0 +1,33 @@
+$color1: yellow;
+$color2: black;
+$color3: rgb(30, 26, 26);
+$borderWidth: 6;
+$width: 300px;
+$height: $width * 1.4;
+
+div {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#border1 {
+  fill: $color1;
+  stroke: $color2;
+  stroke-width: $borderWidth;
+}
+
+#border2 {
+  fill: $color2;
+  stroke: $color3;
+  stroke-width: $borderWidth;
+}
+
+.card {
+  width: $width;
+  height: $height;
+  margin-top: 10px;
+  margin-left: 100px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 2px rgb(253, 182, 3);
+}
