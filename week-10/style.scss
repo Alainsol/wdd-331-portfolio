@@ -1,6 +1,8 @@
 $color1: yellow;
 $color2: black;
-$color3: rgb(30, 26, 26);
+$color3: rgb(250, 128, 5);
+$color4:white;
+$color5:red;
 $borderWidth: 6;
 $width: 300px;
 $height: $width * 1.4;
@@ -18,7 +20,7 @@ div {
 
 #border2 {
   fill: $color2;
-  stroke: $color3;
+  stroke: $color1;
   stroke-width: $borderWidth;
 }
 
