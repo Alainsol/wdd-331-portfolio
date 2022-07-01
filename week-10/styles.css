@@ -11,7 +11,7 @@ div {
 
 #border2 {
   fill: black;
-  stroke: rgb(30, 26, 26);
+  stroke: yellow;
   stroke-width: 6;
 }
 
@@ -23,4 +23,9 @@ div {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 5px 2px rgb(253, 182, 3);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.line2 {
+  stroke: rgb(255, 166, 0);
+  stroke-width: 2;
+}/*# sourceMappingURL=styles.css.map */
