@@ -1,54 +1,56 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
 /* This file based on 'Tranquille' by Dave Shea */
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
 /* basic elements */
 html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  color: #555753;
+  background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+h3 {
+  font: italic normal 1.4em georgia, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #7D775C;
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #B7A5DF;
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+
+abbr {
+  border-bottom: none;
+}
 
 /* specific divs 
 .page-wrapper { 
@@ -192,151 +194,140 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}*/
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
+  padding: 0 175px 0 110px;
+  margin: 0;
+  position: relative;
+  border: 50px solid #162c40;
+}
 
-	.page-wrapper { 
-		display: grid;
-		grid-template-columns: repeat(3, 1fr) ;
-		grid-template-rows: 1fr 1fr;
-		background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-		padding: 0 175px 0 110px;  
-		margin: 0; 
-		position: relative;
-		border: 50px solid #162c40;
-		}
+h1, section.intro div.summary p, div.requirements p:last-child {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-		
-		h1, section.intro div.summary p, div.requirements p:last-child {
-			font-weight: 300;
-			letter-spacing: 2px;
-			text-transform: uppercase;
-		}
-		h1 {
-			background: #ea2e49;
-			color: #fff;
-			display: inline-block;
-			margin-bottom: 1em;
-			padding: 0.5em 1em;}
+h1 {
+  background: #ea2e49;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
 
-			h2 {
-				background: #ea2e49;
-				color: #fff;
-				display:block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				margin: 0;
-			}
+h2 {
+  background: #ea2e49;
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  margin: 0;
+}
 
-			.summary{
-				background: #214b47;
-				color: #fff;
-				display:block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				padding-left: 300px;
-   				 margin-left: 300px;
+.summary {
+  background: #214b47;
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  padding-left: 300px;
+  margin-left: 300px;
+}
 
-			}
+.preamble {
+  background: #3f0b4e;
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  /*padding-right: 300px;
+  			 margin-right: 300px;*/
+}
 
-			.preamble{
-				background: #3f0b4e;
-				color: #fff;
-				display:block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				/*padding-right: 300px;
-   				 margin-right: 300px;*/
+.intro {
+  grid-column: 1;
+  grid-auto-flow: 1;
+  min-width: 500px;
+  width: 100%;
+}
 
-			}
-		.intro { 
-			
-			grid-column: 1;
-			grid-auto-flow: 1;
-			min-width: 500px;
-			width: 100%;
-			}
-		  
+/*.intro header h2 {
+	position: relative;
+	background: #0d2c40 url(icon-star.svg) no-repeat left bottom;
+	background-size: 101%;
+	float: right;
+	color: #ffffff;
+	font-size: 250%;
+	line-height: 1.25em;
+	width: 50%;
+	height: 20.019em;
+	margin: 0 0 0 0;
+	padding: 6em 0.5em 0 0.5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
+.main supporting {
+  display: flex;
+  flex-direction: row;
+  min-width: 470px;
+  width: 100%;
+}
 
-			/*.intro header h2 {
-				position: relative;
-				background: #0d2c40 url(icon-star.svg) no-repeat left bottom;
-				background-size: 101%;
-				float: right;
-				color: #ffffff;
-				font-size: 250%;
-				line-height: 1.25em;
-				width: 50%;
-				height: 20.019em;
-				margin: 0 0 0 0;
-				padding: 6em 0.5em 0 0.5em;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}*/
+.explanation {
+  background: #fa8108;
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  padding-right: 300px;
+  margin-right: 300px;
+}
 
-		.main supporting{
-			display: flex;
-			flex-direction: row;
-			min-width: 470px;
-			width: 100%;
-			
-			}
+.participation {
+  background: #0b103b;
+  color: #fff;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  padding-left: 300px;
+  margin-left: 300px;
+}
 
-			.explanation{
-				background: #fa8108;
-				color: #fff;
-				display:block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				padding-right: 300px;
-   				 margin-right: 300px;
+.requirements {
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  filter: blur(0em);
+  transition: filter 10s;
+  border-radius: 1em 1em 0 0;
+  width: 100%;
+  background: #698b03;
+  color: #fff;
+}
 
-
-			}
-
-			.participation{
-				background: #0b103b;
-				color: #fff;
-				display:block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				padding-left: 300px;
-   				 margin-left: 300px;
-
-
-			}
-
-			.requirements{
-				display: inline-block;
-				margin-bottom: 1em;
-				padding: 0.5em 1em;
-				filter: blur(0em);
-				transition: filter 10s;
-				border-radius: 1em 1em 0 0;
-				width: 100%;
-				background: #698b03;
-				color: #fff;
-
-			}
-		.sidebar{
-			grid-column: 3;
-			grid-auto-flow: 2;
-			min-width: 470px;
-			width: 100%;
-			}
-
-		/******************/
+.sidebar {
+  grid-column: 3;
+  grid-auto-flow: 2;
+  min-width: 470px;
+  width: 100%;
+}/*# sourceMappingURL=zenGarden.css.map */
