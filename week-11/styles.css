@@ -14,16 +14,11 @@
   --s5: calc(var(--s4) * var(--ratio));
   --font-color: #333;
   /* set variation axis values */
-  --mono: "MONO" 0;
-  /* Monospace: Sans (natural-width) or Mono (fixed-width) */
-  --casl: "CASL" 0;
-  /* Casual: Linear to Casual */
-  --wght: 300;
-  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
-  --slnt: 0deg;
-  /* Slant: 0 to -15 degrees, auto cursive at -14 */
-  --crsv: "CRSV" 0.5;
-  /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+  --mono: "MONO" 0; /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+  --casl: "CASL" 0; /* Casual: Linear to Casual */
+  --wght: 300; /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: 0deg; /* Slant: 0 to -15 degrees, auto cursive at -14 */
+  --crsv: "CRSV" 0.5; /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
 }
 
 * {
