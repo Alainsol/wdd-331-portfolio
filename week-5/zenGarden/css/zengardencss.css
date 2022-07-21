@@ -43,6 +43,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 html{
     font-size: 62.5%;
+    
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
@@ -53,7 +54,7 @@ body {
     /* font-size: 1.6rem; */
     font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.2083)), 1.6rem);
     color: #fff;
-    background: #022340;
+    background: #2BC0E4;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='786.404' viewBox='0 0 1024 786.404'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23244674; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='bg-1' class='cls-1' d='M1024,0H391.6s-26.9,76.321-57,100.223c-30.975,24.6-92.1,24.1-128.848,47.379-36.629,23.205-57.357,69.168-91.65,92.311C80.056,262.893,0,286.462,0,286.462V786.4S229.809,452.091,303.575,418.033c76.528-35.333,215.2,4.518,297-30.033,80.651-34.066,123.235-145.361,193.8-177.274C864.257,179.128,1024,196.52,1024,196.52Z'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23244674' fill-opacity='1' d='M0,0L40,32C80,64,160,128,240,176C320,224,400,256,480,224C560,192,640,96,720,64C800,32,880,64,960,74.7C1040,85,1120,75,1200,64C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
     background-repeat: no-repeat, no-repeat ;
     background-position: left top, left bottom;
